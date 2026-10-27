@@ -9,6 +9,7 @@ Benchmark papers are curated in [Data, Representation & Analysis](#2-data-repres
 | Protein-peptide docking benchmark | Deep-learning and focused-docking evaluation | [benchmarking_2023](https://github.com/sannerlab/benchmarking_2023) |
 | CPSet | Protein-cyclic peptide complex benchmark | [CPSet](https://github.com/huifengzhao/CPSet) |
 | LEADS-PEP / DockThor | Flexible protein-peptide docking | [DockThor](https://www.dockthor.lncc.br) |
+| LRGB Peptides-func corrected split | Drop-in re-split of Peptides-func in which no test peptide has a training peptide at Levenshtein ratio 0.80 or above | [lrgb-corrected-v1](https://silicyte.com/data/lrgb-corrected-v1/) |
 
 ### 0.2 Datasets
 
@@ -36,3 +37,4 @@ Benchmark papers are curated in [Data, Representation & Analysis](#2-data-repres
 | Interaction analysis | [Protein-Ligand Interaction Profiler (PLIP)](https://plip-tool.biotec.tu-dresden.de/plip-web/plip/index) |
 | Molecular weight | [Peptide Molecular Weight Calculator](https://peptidecalculatorpro.org/peptide-molecular-weight-calculator/): average mass, monoisotopic mass, formula and m/z for standard amino acid sequences, with acetylation, amidation and disulfide options. |
 | Charge estimates | [Peptide Net Charge Calculator](https://peptidecalculatorpro.org/peptide-net-charge-calculator/): Henderson-Hasselbalch net charge over pH 0-14, estimated pI and GRAVY using EMBOSS pKa values, with terminal modification options. |
+| Split leakage | [twin-check](https://github.com/braxtonmensah/twin-check): GitHub Action reporting the percent of test sequences with a training sequence at Levenshtein ratio 0.80 or above, plus exact overlap, for FASTA or CSV splits. |
